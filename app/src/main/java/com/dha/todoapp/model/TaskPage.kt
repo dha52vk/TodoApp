@@ -88,9 +88,9 @@ fun TaskPage(taskViewModel: TaskViewModel = TaskViewModel()) {
                     exit = fadeOut() + slideOutVertically(targetOffsetY = { it }) + shrinkVertically()
                 ) {
                     Column(horizontalAlignment = Alignment.End) {
-                        ItemFAB(text = stringResource(R.string.add_random_todo), icon = Icons.Default.AddCircle) {
-                            taskViewModel.addTodo(UUID.randomUUID().toString())
-                        }
+//                        ItemFAB(text = stringResource(R.string.add_random_todo), icon = Icons.Default.AddCircle) {
+//                            taskViewModel.addTodo(UUID.randomUUID().toString())
+//                        }
                         ItemFAB(text = stringResource(R.string.clear_all_done_tasks), icon = Icons.Default.Clear) {
                             clearAllDoneTaskConfirmDialogVisible = true
                             floatingMenuExpanded = false
